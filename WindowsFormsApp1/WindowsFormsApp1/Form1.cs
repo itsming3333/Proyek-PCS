@@ -15,13 +15,26 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            this.Size = new Size(1000, 900);
-            this.IsMdiContainer = true;
+            formLogin login = new formLogin();
+            login.MdiParent = this;
+            login.Show();
         }
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
+
+        public void showMenuStrip(string jabatan)
+        {
+            if(jabatan == "admin")
+            {
+                menuStrip1.Items.Add(new ToolStripMenuItem("Reservation Center"));
+                menuStrip1.Items.Add(new ToolStripMenuItem("Administration"));
+                menuStrip1.Items.Add(new ToolStripMenuItem("Reservation"));
+                menuStrip1.Items.Add(new ToolStripMenuItem("Log Out"));
+            }
+        }
+        
     }
 }

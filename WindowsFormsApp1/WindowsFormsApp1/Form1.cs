@@ -15,7 +15,6 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
-            this.Size = new Size(1000, 800);
         }
     }
 }

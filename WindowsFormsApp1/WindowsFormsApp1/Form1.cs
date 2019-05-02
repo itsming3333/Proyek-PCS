@@ -15,6 +15,13 @@ namespace WindowsFormsApp1
         public Form1()
         {
             InitializeComponent();
+            this.Size = new Size(1000, 900);
+            this.IsMdiContainer = true;
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
